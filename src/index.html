@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Porfolio | Denis Alip Sahidi</title>
+
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <header class="bg-dark-nav text-white relative w-full z-50">
+      <div
+        class="flex items-center justify-between lg:justify-around px-8 py-4 lg:px-32 max-w-[1440px] mx-auto"
+      >
+        <!-- logo -->
+        <div class="flex items-center gap-2">
+          <i class="fas fa-code font-bold text-xl"></i>
+          <span class="font-bold text-xl">DEVNIS</span>
+        </div>
+        <!-- nav items desktop -->
+        <nav class="hidden lg:block">
+          <ul class="flex items-center gap-12">
+            <li>
+              <a href="#home" class="text-base font-semibold">Home</a>
+            </li>
+            <li>
+              <a href="#projects" class="text-base font-semibold">Projects</a>
+            </li>
+            <li>
+              <a href="#contact" class="text-base font-semibold">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <button
+          id="hamburger"
+          class="lg:hidden flex flex-col gap-[5px] z-[60] hover:cursor-pointer"
+        >
+          <span
+            class="w-7 h-[3px] bg-white rounded transition-all duration-300 origin-center"
+          ></span>
+          <span
+            class="w-7 h-[3px] bg-white rounded transition-all duration-300 origin-center"
+          ></span>
+          <span
+            class="w-7 h-[3px] bg-white rounded transition-all duration-300 origin-center"
+          ></span>
+        </button>
+      </div>
+
+      <!-- mobile menu overlay -->
+      <div
+        id="mobileMenu"
+        class="fixed inset-0 bg-black opacity-95 flex items-center justify-center flex-col gap-10 text-2xl font-semibold text-white transition-all duration-500 translate-x-full lg:hidden"
+      >
+        <a href="#home" class="hover:text-gray-300">Home</a>
+        <a href="#projects" class="hover:text-gray-300">Projects</a>
+        <a href="#contact" class="hover:text-gray-300">Contact</a>
+      </div>
+    </header>
+
+    <section class="h-screen flex items-center justify-center" id="home">
+      <div class="section-container">
+        <div
+          class="flex flex-col items-center justify-center text-center space-y-8"
+        >
+          <img
+            src="./images/avatar.png"
+            alt=""
+            class="max-w-[220px] mx-auto bg-clip-text"
+          />
+          <h1
+            class="font-bold font-primary text-[28px] md:text-5xl text-white text-center"
+          >
+            Freelance Fullstack Web Developer<br />
+            for your next
+            <span
+              class="bg-gradient-to-r from-[#FF8660] to-[#9A33FF] bg-clip-text text-transparent"
+            >
+              project.
+            </span>
+          </h1>
+          <p
+            class="text-secondary max-w-2xl text-sm md:text-base text-center leading-7"
+          >
+            I help businesses and individuals build modern, responsive, and
+            scalable websites. From frontend to backend, I deliver clean,
+            efficient code and solutions that work.
+          </p>
+          <div class="flex items-center gap-4 md:gap-8">
+            <a
+              href="#contact"
+              class="px-8 py-4 bg-white rounded-full border border-transparent font-bold text-sm md:text-lg hover:cursor-pointer hover:bg-transparent hover:text-white hover:border-1 hover:border-white"
+            >
+              Contact Me
+            </a>
+            <button
+              class="px-8 py-4 bg-transparent rounded-full border border-white text-white font-bold text-sm md:text-lg hover:cursor-pointer hover:bg-white hover:text-black"
+            >
+              View My CV
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- skils -->
+    <!-- experience section -->
+    <section class="bg-black">
+      <div class="section-container flex flex-col items-center space-y-10">
+        <h2
+          class="text-2xl bg-gradient-to-r from-white to-gray-500 bg-clip-text text-transparent font-semibold tracking-widest"
+        >
+          EXPERIENCE WITH
+        </h2>
+
+        <div class="flex gap-8 flex-wrap justify-center items-center grayscale">
+          <!-- JavaScript -->
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+            alt="JavaScript"
+            class="w-10 h-10"
+          />
+
+          <!-- Node.js -->
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+            alt="Node.js"
+            class="w-10 h-10"
+          />
+
+          <!-- HTML -->
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+            alt="HTML5"
+            class="w-10 h-10"
+          />
+
+          <!-- CSS -->
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+            alt="CSS3"
+            class="w-10 h-10"
+          />
+
+          <!-- React -->
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+            alt="React"
+            class="w-10 h-10"
+          />
+
+          <!-- Tailwind CSS (pakai SVG alternatif) -->
+          <img
+            src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"
+            alt="Tailwind CSS"
+            class="w-10 h-10"
+          />
+
+          <!-- Bootstrap -->
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+            alt="Bootstrap"
+            class="w-10 h-10"
+          />
+
+          <!-- Laravel (pakai SVG alternatif) -->
+          <img
+            src="https://www.vectorlogo.zone/logos/laravel/laravel-icon.svg"
+            alt="Laravel"
+            class="w-10 h-10"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- projects -->
+    <section class="section-container py-20 bg-black" id="projects">
+      <div class="flex flex-col items-center space-y-12">
+        <h2 class="text-orange font-bold text-4xl font-primary">PROJECTS</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Project 1 -->
+          <a
+            href="https://denisalipshd.github.io/website-sekolah/"
+            target="_blank"
+            class="flex flex-col bg-dark-nav rounded-xl overflow-hidden hover:brightness-110 transition"
+          >
+            <img
+              src="./images/web-sekolah.png"
+              alt="website school"
+              class="w-full h-36"
+            />
+            <div class="p-4">
+              <p class="text-white text-xs">CLICK HERE TO VISIT</p>
+              <h4 class="text-2xl text-white font-bold font-primary">
+                WEBSITE SCHOOL
+              </h4>
+              <p class="text-sm text-secondary mt-1 max-w-xs">
+                A school website developed using Laravel with a
+                FilamentPHP-based admin panel. This project includes public
+                information pages for visitors (such as school profile, news,
+                gallery, and contact), as well as admin pages to manage school
+                data dynamically without coding.
+              </p>
+            </div>
+          </a>
+
+          <!-- Project 2 -->
+          <a
+            href=" https://denisalipshd.github.io/foodie-restaurant/"
+            target="_blank"
+            class="flex flex-col bg-dark-nav rounded-xl overflow-hidden hover:brightness-110 transition"
+          >
+            <img
+              src="./images/web-food.png"
+              alt="website food"
+              class="w-full h-36"
+            />
+            <div class="p-4">
+              <p class="text-white text-xs">CLICK HERE TO VISIT</p>
+              <h4 class="text-2xl text-white font-bold font-primary">
+                WEBSITE FOOD
+              </h4>
+              <p class="text-sm text-secondary mt-1 max-w-xs">
+                A modern and responsive food website showcasing a restaurant
+                menu layout. Built using HTML & CSS with Flexbox and grid
+                techniques to achieve clean design and mobile-friendly
+                structure.
+              </p>
+            </div>
+          </a>
+
+          <a
+            href=" https://denisalipshd.github.io/website-coffee/"
+            target="_blank"
+            class="flex flex-col bg-dark-nav rounded-xl overflow-hidden hover:brightness-110 transition"
+          >
+            <img
+              src="./images/web-coffe.png"
+              alt="website coffee"
+              class="w-full h-36"
+            />
+            <div class="p-4">
+              <p class="text-white text-xs">CLICK HERE TO VISIT</p>
+              <h4 class="text-2xl text-white font-bold font-primary">
+                WEBSITE COFFE
+              </h4>
+              <p class="text-sm text-secondary mt-1 max-w-xs">
+                A stylish and responsive coffee shop website built using HTML
+                and CSS. Features modern layout with Flexbox, smooth hover
+                effects, and mobile-friendly design.
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <section class="bg-dark-nav md:px-32" id="contact">
+      <div class="section-container space-y-8">
+        <h2 class="text-white font-bold text-2xl">Contact</h2>
+        <p class="max-w-xl text-secondary">
+          Freelance Fullstack Web Developer ready to build modern, responsive,
+          and scalable web solutions. Let’s connect and make your ideas come to
+          life!
+        </p>
+
+        <!-- Email -->
+        <div class="flex items-center gap-2">
+          <i class="fas fa-envelope text-white w-5"></i>
+          <span class="text-base text-white font-bold">
+            denisalip478@gmail.com
+          </span>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="flex items-center gap-6 text-white text-xl">
+          <a
+            href="https://www.instagram.com/devnis.web"
+            target="_blank"
+            title="Instagram"
+          >
+            <i class="fab fa-instagram hover:text-pink-500"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/denis.877995"
+            target="_blank"
+            title="Facebook"
+          >
+            <i class="fab fa-facebook hover:text-blue-500"></i>
+          </a>
+          <a
+            href="https://www.tiktok.com/@devnis.web"
+            target="_blank"
+            title="TikTok"
+          >
+            <i class="fab fa-tiktok hover:text-white"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
